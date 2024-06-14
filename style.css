@@ -1,16 +1,25 @@
 /* font family */
+@font-face{
+    font-family: platasansRegular;
+    src: url(./fonts/PlataSans-Regular.ttf)
+}
+
+@font-face {
+    font-family: platasansBold;
+    src: url(./fonts/PlataSans-Bold.ttf);
+}
 
 
 
 /* ----CUSTOM PROPERTIES---- */
 /* Colors */
 :root{
-    --gold-light: 51 100% 50%;
-    --gold-dark: 51 100% 28%;
-    --silver-light: 0 0% 75%;
-    --silver-dark: 0 0% 16%;
-    --white: 0 100% 100%;
-    --red: 0 66% 37%;
+    --clr-gold-light: 51 100% 50%;
+    --clr-gold-dark: 51 100% 28%;
+    --clr-silver-light: 0 0% 75%;
+    --clr-silver-dark: 0 0% 16%;
+    --clr-white: 0 100% 100%;
+    --clr-red: 0 66% 37%;
 
 /* font-sizes */
     --fs-100: 1rem;
@@ -19,14 +28,89 @@
 /* flex/grid gap */
     --gap: 1rem;
     
-/*
+/* font-families */
+    --ff-sans: "platasansRegular", sans-serif;
 
+}
+
+
+/* ------RESET SECTION------ */
+/* Box sizing */
+*,
+*::before,
+*::after {
+    box-sizing: border-box;
+}
+
+/* Reset margins */
+body,
+h1,
+h2,
+h3,
+h4,
+h5,
+p,
+figure,
+picture {
+    margin: 0; 
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p {
+    font-weight: 400;
+}
+
+/* set up the body */
+body {
+    font-family: var(--ff-sans);
+    font-size: var(--fs-400);
+    color: hsl( var(--clr-gold-dark) );
+    background-color: hsl( var(--clr-silver-dark) );
+    line-height: 1.5;
+    min-height: 100vh;
+}
+
+/* make images easier to work with */
+img,
+picutre {
+    max-width: 100%;
+    display: block;
+}
+
+/* make form elements easier to work with */
+input,
+button,
+textarea,
+select {
+    font: inherit;
+}
+
+/* remove animations for people who've turned them off */
+@media (prefers-reduced-motion: reduce) {  
+  *,
+  *::before,
+  *::after {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+    scroll-behavior: auto !important;
+  }
 }
 
 
 
 
+/* Utility Classes */
 
+.flex{
+    display: flex;
+    gap: var(1em, --gap);
+}
 
 
 
