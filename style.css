@@ -1,0 +1,35 @@
+/* font family */
+
+
+
+/* ----CUSTOM PROPERTIES---- */
+/* Colors */
+:root{
+    --gold-light: 51 100% 50%;
+    --gold-dark: 51 100% 28%;
+    --silver-light: 0 0% 75%;
+    --silver-dark: 0 0% 16%;
+    --white: 0 100% 100%;
+    --red: 0 66% 37%;
+
+/* font-size */
+    --fs-100: 1rem;
+    --fs-200: 2rem;
+
+/* flex/grid gap */
+    --gap: 1rem;
+    
+/*
+
+}
+
+
+
+
+
+
+
+
+
+
+
